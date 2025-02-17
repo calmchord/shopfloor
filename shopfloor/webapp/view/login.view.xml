@@ -1,0 +1,23 @@
+<mvc:View controllerName="shopfloor.controller.login"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:form="sap.ui.layout.form">
+    <Page id="_IDGenPage5"  title="Login">
+        <content>
+            <VBox id="_IDGenVBox"  class="pageContainer" alignItems="Center" justifyContent="Center" height="85%">
+                <HBox id="_IDGenHBox"  class="loginHBox">
+                    <VBox id="_IDGenVBox2"  class="formContainer">
+                        <form:SimpleForm id="_IDGenSimpleForm"  title="Login" editable="true" layout="ResponsiveGridLayout">
+                            <Label id="_IDGenLabel10" text="Customer ID"  class="mt-2" />
+                            <Input id="_IDGenInput4" placeholder="Enter Your Customer ID"  value="{/customerId}"/>
+
+                            <Label id="_IDGenLabel11" text="Password" />
+                            <Input id="_IDGenInput5" placeholder="Enter Your Password"  type="Password" value="{/password}"/>
+                            
+                            <Button id="_IDGenButton4"  text="Login" type="Emphasized" class="customButton" press="onLogin" />
+                        </form:SimpleForm>
+                    </VBox>
+                </HBox>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

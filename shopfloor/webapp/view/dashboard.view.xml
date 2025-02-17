@@ -1,0 +1,42 @@
+<mvc:View controllerName="shopfloor.controller.dashboard"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <headerContent>
+            <!-- Include Toolbar Fragment -->
+            <core:Fragment fragmentName="shopfloor.view.fragments.Toolbar" type="XML"
+                xmlns:core="sap.ui.core"/>
+        </headerContent>
+        <content>
+            <VBox id="_IDGenVBox1" class="vboxStyle" alignItems="Center" justifyContent="Center" height="85%">
+                <FlexBox id="_IDGenFlexBox" class="flexBoxStyle">
+
+                    <GenericTile id="_IDGenGenericTile" header="Planned Month Wise" press="onNavigateToPlanned" class="customLabelSpacing">
+                        <TileContent id="_IDGenTileContent">
+                            <ImageContent id="_IDGenImageContent" src="sap-icon://calendar" />
+                        </TileContent>
+                    </GenericTile>
+
+                    <GenericTile id="_IDGenGenericTile1" header="Production Month Wise" press="onNavigateToProduction" class="customLabelSpacing">
+                        <TileContent id="_IDGenTileContent1">
+                            <ImageContent id="_IDGenImageContent1" src="sap-icon://factory"/>
+                        </TileContent>
+                    </GenericTile>
+
+                    <GenericTile id="_IDGenGenericTile2" header="Planned Year Wise" press="onNavigateToPlannedYear" class="customLabelSpacing">
+                        <TileContent id="_IDGenTileContent2">
+                            <ImageContent id="_IDGenImageContent2" src="sap-icon://chart-table-view"/>
+                        </TileContent>
+                    </GenericTile>
+
+                    <GenericTile id="_IDGenGenericTile3" header="Production Year Wise" press="onNavigateToProductionYear" class="customLabelSpacing">
+                        <TileContent id="_IDGenTileContent3">
+                            <ImageContent id="_IDGenImageContent3" src="sap-icon://business-objects-experience"/>
+                        </TileContent>
+                    </GenericTile>
+
+                </FlexBox>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
